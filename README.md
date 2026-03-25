@@ -1,101 +1,134 @@
-# Exploring the Involvement in Freelancing/Tuition Activities of Students in SUST
+# Exploring the Involvement in Freelancing and Tuition Activities of Students in SUST
 
-This project investigates the prevalence, patterns, and determinants of student involvement in **freelancing** and **private tuition** at **Shahjalal University of Science and Technology (SUST), Bangladesh**.
+![Project Type](https://img.shields.io/badge/Project-Statistical%20Analysis-blue)
+![Institution](https://img.shields.io/badge/Institution-SUST-green)
+![Sample Size](https://img.shields.io/badge/Sample-400%20Students-orange)
+![Departments](https://img.shields.io/badge/Departments-17-informational)
+![Model](https://img.shields.io/badge/Model-Binary%20Logistic%20Regression-purple)
+![AUC](https://img.shields.io/badge/AUC-0.98-brightgreen)
+![Accuracy](https://img.shields.io/badge/Accuracy-96.8%25-success)
+
+A research project examining how and why students at **Shahjalal University of Science and Technology (SUST)** participate in **freelancing** and **private tuition** alongside their studies.
+
+---
 
 ## Overview
-This repository contains the project materials for a quantitative study on how and why university students participate in income-generating activities alongside their academic work. The analysis focuses on identifying:
+This repository contains the materials for a quantitative study on student involvement in income-generating activities at SUST. The project focuses on measuring participation patterns, identifying associated factors, and building a predictive model to explain student involvement.
 
-- how common freelancing and tuition activities are among SUST students
-- which student characteristics are associated with participation
-- which factors most strongly influence involvement
-- how well a statistical model can predict participation
-
-The project was completed as part of the **STA430 Project** course in the **Department of Statistics, SUST**.
-
-## Key Findings
-- Survey data were collected from **400 students** selected from **17 departments** across **6 schools**.
-- **220 students (55.0%)** were involved in **tuition activities**.
-- **23 students (5.75%)** were involved in **freelancing only**.
-- **15 students (3.75%)** were involved in **both freelancing and tuition**.
-- **142 students (35.5%)** reported **no involvement** in either activity.
-- The final **binary logistic regression model** achieved **96.8% classification accuracy**.
-- The model produced an **AUC of 0.98**, indicating excellent predictive performance.
-- The model fit was strong, with **Nagelkerke R² = 0.912** and **Hosmer-Lemeshow p = 0.977**.
-
-## Problem Statement
-University students in Bangladesh increasingly participate in freelancing and private tuition to support their living costs, education expenses, and financial independence. This project examines the background characteristics, associations, and predictive factors behind that participation among SUST students.
+This work was completed as part of the **STA430 Project** in the **Department of Statistics, SUST**.
 
 ## Objectives
-- Assess the frequency of freelancing and tuition activities among SUST students.
-- Describe the background characteristics of the selected students.
-- Examine associations between student characteristics and participation.
-- Identify the most influential factors affecting involvement.
+- Measure the prevalence of freelancing and private tuition among SUST students.
+- Describe the socio-academic profile of selected respondents.
+- Test associations between student characteristics and participation.
+- Identify the strongest predictors of involvement using logistic regression.
+- Translate survey data into actionable insights for student support and research.
 
-## Methodology
-### Study Design
-- **Study population:** Students of Shahjalal University of Science and Technology (SUST)
-- **Academic year:** 2023
-- **Sampling frame:** 27 departments across 6 schools
-- **Selected departments:** 17 departments using **Probability Proportional to Size (PPS)** sampling
-- **Sample size:** 400 students
-- **Respondent selection:** **Simple Random Sampling (SRS)**
-- **Data collection:** Direct interview-based survey
+## Study Design
+| Item | Details |
+|---|---|
+| Institution | Shahjalal University of Science and Technology (SUST) |
+| Study year | 2023 |
+| Population | SUST students |
+| Sampling frame | 27 departments across 6 schools |
+| Selected departments | 17 departments |
+| Sampling method | Probability Proportional to Size (PPS) + Simple Random Sampling (SRS) |
+| Sample size | 400 students |
+| Data collection | Direct interview-based survey |
 
-### Tools Used
-- **IBM SPSS 25** for data analysis
-- **RStudio 4.3.1** for statistical analysis and modeling
+## Tools and Methods
+### Tools
+- **IBM SPSS 25**
+- **RStudio 4.3.1**
 
-### Statistical Techniques
+### Statistical techniques
 - Descriptive statistics
-- Bar charts and pie charts
 - Crosstabulation
 - Chi-square tests
 - Binary multiple logistic regression
-- VIF for multicollinearity assessment
+- VIF-based multicollinearity assessment
 - Goodness-of-fit evaluation
 - Hosmer-Lemeshow test
-- ROC curve and AUC-based model evaluation
+- ROC curve and AUC analysis
+- Bar and pie chart visualization
 
-## Results Summary
-The study found that **tuition** was the most common student earning activity, far exceeding freelancing participation. Patterns varied by department, gender, extracurricular involvement, health behavior, and academic context.
+## Key Results
+### Participation breakdown
+| Category | Count | Share |
+|---|---:|---:|
+| Tuition only / tuition-involved dominant group | 220 | 55.0% |
+| Freelancing only | 23 | 5.75% |
+| Both freelancing and tuition | 15 | 3.75% |
+| No involvement | 142 | 35.5% |
 
-Some notable findings include:
-- Tuition was the dominant activity, suggesting it remains the most accessible and widely adopted earning option for students.
-- Engagement patterns varied across disciplines, with some departments showing stronger freelancing participation and others depending more heavily on tutoring.
-- Several student characteristics showed statistically significant association with participation, including gender and selected behavioral variables.
-- Time spent on income-generating work emerged as one of the strongest predictors in the logistic regression model.
+### Model performance
+| Metric | Value |
+|---|---:|
+| Classification accuracy | 96.8% |
+| AUC | 0.98 |
+| Nagelkerke R² | 0.912 |
+| Hosmer-Lemeshow p-value | 0.977 |
 
-## Model Performance
-The binary logistic regression model was used to predict whether a student was involved in freelancing/tuition activities.
-
-Performance highlights:
-- **Overall prediction accuracy:** 96.8%
-- **Area Under Curve (AUC):** 0.98
-- **Nagelkerke R²:** 0.912
-- **Hosmer-Lemeshow test p-value:** 0.977
-
-These metrics indicate that the model had **excellent discriminative ability** and **strong fit** for the observed data.
+## Key Insights
+- **Tuition was the dominant earning activity**, with **220 out of 400 students (55.0%)** involved.
+- **Freelancing participation was much lower** than tuition, suggesting tutoring remains the more accessible or familiar income source for students.
+- Participation patterns varied across departments and student characteristics.
+- **Time spent on income-generating work** emerged as one of the strongest predictors of participation in the final model.
+- The model demonstrated **excellent discriminative performance**, showing that student involvement patterns can be predicted with high reliability from survey variables.
 
 ## Project Impact
-This project turns survey data into evidence-based insight for understanding student work behavior at SUST. The findings can support:
+This project converted student survey data into an evidence-based analytical framework for understanding work participation at SUST.
 
-- student welfare and financial assistance planning
-- career guidance and skill development initiatives
-- policy discussion around earn-and-learn activities
-- future comparative research across universities in Bangladesh
+It can support:
+- **student welfare planning** by showing how many students are actively engaged in paid work
+- **career guidance initiatives** by revealing differences between freelancing and tuition pathways
+- **policy discussion** around student financial pressure and earn-and-learn behavior
+- **future research** on student labor participation across departments or universities
+
+## Portfolio Summary
+Analyzed survey data from **400 students across 17 departments** at SUST to identify the main factors influencing involvement in freelancing and private tuition. Built a binary logistic regression model with **96.8% classification accuracy** and **0.98 AUC**, revealing that tuition was the dominant earning activity (**220 students, 55%**) and that time spent on income-generating work was the strongest predictor of participation.
+
+## Suggested Repository Structure
+Use or adapt this structure so the repository is easier to navigate on GitHub:
+
+```text
+Involvement-in-Freelancing--tuition--Activities-in-SUST/
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+├── notebooks/
+│   └── analysis.ipynb
+├── scripts/
+│   └── logistic_regression_analysis.R
+├── reports/
+│   └── project_report.pdf
+├── figures/
+│   ├── charts/
+│   └── tables/
+└── results/
+    └── model_outputs/
+```
+
+## Repository Contents
+This repository may include:
+- project report
+- survey dataset or processed dataset
+- analysis scripts or notebooks
+- statistical tables and figures
+- model outputs
 
 ## Limitations
-As with most university survey-based studies, the findings should be interpreted in light of:
-- self-reported student responses
-- single-university scope
-- cross-sectional design
-- possible unobserved socio-economic or behavioral factors
+- The study is based on **self-reported survey responses**.
+- It focuses on a **single university**, so findings may not generalize broadly.
+- The design is **cross-sectional**, so causal conclusions should be avoided.
+- Some socio-economic and behavioral factors may remain unobserved.
 
 ## Future Work
-- Extend the analysis to multiple universities in Bangladesh
-- Compare departmental and regional differences at a larger scale
-- Add reproducible scripts and documented data-processing steps
-- Build a dashboard or interactive report for result exploration
+- Extend the study to multiple universities in Bangladesh.
+- Compare findings across academic disciplines and regions.
+- Add a fully reproducible R or Python workflow.
+- Build an interactive dashboard for exploring the results.
 
 ## Author
 **Md. Yeasir Zawad**  
