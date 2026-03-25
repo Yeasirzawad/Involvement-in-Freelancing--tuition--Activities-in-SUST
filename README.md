@@ -15,8 +15,6 @@ A research project examining how and why students at **Shahjalal University of S
 ## Overview
 This repository contains the materials for a quantitative study on student involvement in income-generating activities at SUST. The project focuses on measuring participation patterns, identifying associated factors, and building a predictive model to explain student involvement.
 
-This work was completed as part of the **STA430 Project** in the **Department of Statistics, SUST**.
-
 ## Objectives
 - Measure the prevalence of freelancing and private tuition among SUST students.
 - Describe the socio-academic profile of selected respondents.
@@ -88,35 +86,6 @@ It can support:
 ## Portfolio Summary
 Analyzed survey data from **400 students across 17 departments** at SUST to identify the main factors influencing involvement in freelancing and private tuition. Built a binary logistic regression model with **96.8% classification accuracy** and **0.98 AUC**, revealing that tuition was the dominant earning activity (**220 students, 55%**) and that time spent on income-generating work was the strongest predictor of participation.
 
-## Suggested Repository Structure
-Use or adapt this structure so the repository is easier to navigate on GitHub:
-
-```text
-Involvement-in-Freelancing--tuition--Activities-in-SUST/
-├── README.md
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   └── analysis.ipynb
-├── scripts/
-│   └── logistic_regression_analysis.R
-├── reports/
-│   └── project_report.pdf
-├── figures/
-│   ├── charts/
-│   └── tables/
-└── results/
-    └── model_outputs/
-```
-
-## Repository Contents
-This repository may include:
-- project report
-- survey dataset or processed dataset
-- analysis scripts or notebooks
-- statistical tables and figures
-- model outputs
 
 ## Limitations
 - The study is based on **self-reported survey responses**.
