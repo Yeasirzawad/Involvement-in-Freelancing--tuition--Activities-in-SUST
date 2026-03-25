@@ -1,6 +1,6 @@
 # Exploring the Involvement in Freelancing/Tuition Activities of Students in SUST
 
-A statistics project investigating the prevalence, patterns, and determinants of student involvement in **freelancing** and **private tuition** at **Shahjalal University of Science and Technology (SUST), Bangladesh**.
+This project investigates the prevalence, patterns, and determinants of student involvement in **freelancing** and **private tuition** at **Shahjalal University of Science and Technology (SUST), Bangladesh**.
 
 ## Overview
 This repository contains the project materials for a quantitative study on how and why university students participate in income-generating activities alongside their academic work. The analysis focuses on identifying:
