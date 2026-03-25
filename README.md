@@ -83,10 +83,6 @@ It can support:
 - **policy discussion** around student financial pressure and earn-and-learn behavior
 - **future research** on student labor participation across departments or universities
 
-## Portfolio Summary
-Analyzed survey data from **400 students across 17 departments** at SUST to identify the main factors influencing involvement in freelancing and private tuition. Built a binary logistic regression model with **96.8% classification accuracy** and **0.98 AUC**, revealing that tuition was the dominant earning activity (**220 students, 55%**) and that time spent on income-generating work was the strongest predictor of participation.
-
-
 ## Limitations
 - The study is based on **self-reported survey responses**.
 - It focuses on a **single university**, so findings may not generalize broadly.
