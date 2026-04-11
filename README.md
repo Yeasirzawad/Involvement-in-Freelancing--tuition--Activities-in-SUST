@@ -85,10 +85,6 @@ It created value in four ways:
 4. **Decision support**  
    The findings can support conversations around student welfare, income pressure, work-study balance, and future campus-level research.
 
----
-
-## Portfolio summary
-Analyzed survey data from **400 students across 17 departments** at SUST to identify the main factors influencing involvement in freelancing and private tuition. Built a binary logistic regression model with **96.8% classification accuracy** and **0.98 AUC**, revealing that tuition was the dominant earning activity (**220 students, 55%**) and that time spent on income-generating work was one of the strongest predictors of participation.
 
 ---
 
@@ -120,29 +116,6 @@ Analyzed survey data from **400 students across 17 departments** at SUST to iden
 | Sample size | 400 students |
 | Data collection | Direct interview-based survey |
 
----
-
-## Repository structure
-```text
-Involvement-in-Freelancing--tuition--Activities-in-SUST/
-├── README.md
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-│   └── analysis.ipynb
-├── scripts/
-│   └── logistic_regression_analysis.R
-├── reports/
-│   └── project_report.pdf
-├── figures/
-│   ├── charts/
-│   └── tables/
-└── results/
-    └── model_outputs/
-```
-
-If your actual folder names differ, replace this block with the real repository tree.
 
 ---
 
